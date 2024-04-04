@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html,
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    height: 100%;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: 100vw 45vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-container{
+    width: 450px;
+    background-color: white;
+    border-radius: 1rem;
+    color:hsl(223, 47%, 23%);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.title{
+    padding: 2rem 0 1rem 0;
+    font-weight: 900;
+    color: black;
+}
+
+.information{
+    color: hsl(224, 23%, 55%);
+    padding-bottom: 1rem;
+    font-size: 16px;
+   
+}
+
+.description{
+    line-height: 1.6rem;
+    padding: 0 4rem;
+}
+
+.hero {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.order-plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.plan{
+    display: flex;
+}
+
+.plan-info{
+    padding-left: 1rem;
+    text-align: center;
+}
+
+.plan-price{
+    color: hsl(224, 23%, 55%);
+}
+
+.btn{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.changeBtn{
+    color:hsl(245, 75%, 52%);
+}
+
+.proceedBtn {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 85%;
+    transition-duration: 0.4s;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+.proceedBtn:hover{
+    opacity: 75%;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.cancelBtn {
+    margin-bottom: 1rem;
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.cancelBtn:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 375px) {
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: grid;
+        place-items: center;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .card-container {
+        width: 30rem;
+    }
+}
